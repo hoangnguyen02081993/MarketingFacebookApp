@@ -88,6 +88,7 @@
     <Compile Include="LoginPreview.Designer.cs">
       <DependentUpon>LoginPreview.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\Data.cs" />
     <Compile Include="Models\FanpageOrGroupFB.cs" />
     <Compile Include="Models\HttpRequest.cs" />

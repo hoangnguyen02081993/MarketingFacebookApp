@@ -16,6 +16,7 @@ namespace MarketingFacebookApp.Extentions
         public delegate void GetTockenSuccess(object sender, User user);
         public event GetTockenSuccess OnGetTockenSuccess;
         private const string redirect_uri = "https://www.facebook.com/connect/login_success.html";
+        //private const string _ExtendedPermissions = "public_profile,email,pages_show_list,user_friends,publish_pages";
         private const string _ExtendedPermissions = "public_profile,email,pages_show_list";
         private string client_id;
         private string client_secret;

@@ -28,8 +28,12 @@ namespace MarketingFacebookApp
         {
             db.ReadData();
             LoadUserOnRegion(db.GetUsers());
+            LoadData();
         }
-
+        private void LoadData()
+        {
+            tp_addfriend_type.SelectedIndex = 0;
+        }
         private void LoadUserOnRegion(IEnumerable<User> users)
         {
             pn_user.ClearUserRegion();
@@ -79,6 +83,35 @@ namespace MarketingFacebookApp
         private void Btn_remove_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tp_addfriend_type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(tp_addfriend_type.SelectedIndex != 3)
+            {
+                tp_addfriend_param_lable.Text = "Id bài viết:";
+            }
+            else
+            {
+                tp_addfriend_param_lable.Text = "Từ khóa:";
+            }
+        }
+
+        private void tp_addfriend_getlist_Click(object sender, EventArgs e)
+        {
+            switch(tp_addfriend_type.SelectedIndex)
+            {
+                case 0:
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
