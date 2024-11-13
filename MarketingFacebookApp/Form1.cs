@@ -65,18 +65,7 @@ namespace MarketingFacebookApp
         {
             using (LoginPreview form = new LoginPreview())
             {
-                if (form.ShowDialog() == DialogResult.OK)
-                {
-                    if (db.GetUsers().Where(u => u.Id == form.ResultUser.Id).FirstOrDefault() != null)
-                    {
-                        db.UserAction(form.ResultUser, ActionType.Edit);
-                    }
-                    else
-                    {
-                        db.UserAction(form.ResultUser, ActionType.Add);
-                    }
-                    LoadUserOnRegion(db.GetUsers());
-                }
+                
             }
         }
 
@@ -87,14 +76,7 @@ namespace MarketingFacebookApp
 
         private void tp_addfriend_type_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(tp_addfriend_type.SelectedIndex != 3)
-            {
-                tp_addfriend_param_lable.Text = "Id bài viết:";
-            }
-            else
-            {
-                tp_addfriend_param_lable.Text = "Từ khóa:";
-            }
+            
         }
 
         private void tp_addfriend_getlist_Click(object sender, EventArgs e)
