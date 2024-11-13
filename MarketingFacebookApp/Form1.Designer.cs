@@ -20,12 +20,7 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
+        
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
@@ -198,12 +193,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(71, 324);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(544, 155);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tự động kết bạn";
+            
             // 
             // Id
             // 
@@ -255,16 +245,10 @@
         private System.Windows.Forms.TextBox tp_addfriend_param_input;
         private System.Windows.Forms.ComboBox tp_addfriend_type;
         private System.Windows.Forms.Label tp_addfriend_param_lable;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.ColorDialog colorDialog1;
+      
         private System.Windows.Forms.Button tp_addfriend_getlist;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView tp_addfriend_gv_user;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewImageColumn image;
     }
 }
 
